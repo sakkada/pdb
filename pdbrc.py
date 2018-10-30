@@ -13,6 +13,8 @@ class Config(pdb.DefaultConfig):
     stdin_paste = 'epaste'
     filename_color = pdb.Color.lightgray
     use_terminal256formatter = False
+    sticky_by_default = True # start in sticky mode
+    current_line_color = 44 # blue
     # exec_if_unfocused = "play ~/sounds/dialtone.wav 2> /dev/null &"
 
     def __init__(self):
