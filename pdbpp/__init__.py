@@ -18,10 +18,10 @@ import traceback
 import subprocess
 import pprint
 import re
-from fancycompleter import Completer, ConfigurableClass, Color
 import fancycompleter
+from fancycompleter import Completer, ConfigurableClass, Color
 
-from terminalsize.py import get_terminal_size
+from .terminalsize import get_terminal_size
 
 __author__ = 'Antonio Cuni <anto.cuni@gmail.com>'
 __url__ = 'http://github.com/antocuni/pdb'
@@ -1099,5 +1099,5 @@ def break_on_setattr(attrname, condition=always, set_trace=set_trace):
     return decorator
 
 if __name__=='__main__':
-    import pdb
-    pdb.main()
+    import pdbpp
+    pdbpp.main()
